@@ -1,0 +1,23 @@
+import random
+
+print("ЧЕГО СКАЗАТЬ-ТО ХОТЕЛ, МИЛОК?!")
+
+count = 0  
+
+while True:
+    phrase = input(" ")
+
+    if phrase == "ПОКА!":
+        count += 1
+    else:
+        count = 0 
+
+    if count == 3:
+        print("ДО СВИДАНИЯ, МИЛЫЙ!")
+        break
+
+    if phrase != phrase.upper() or phrase == "":
+        print("АСЬ?! ГОВОРИ ГРОМЧЕ, ВНУЧЕК!")
+    else:
+        year = random.randint(1930, 1950)
+        print(f"НЕТ, НИ РАЗУ С {year} ГОДА!")
